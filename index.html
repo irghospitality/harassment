@@ -209,7 +209,7 @@ function submitExam(){
   g('rScr').textContent=score;
   g('rTtl').textContent=passed?'Congratulations — you passed!':'You did not pass this time';
   g('rMsg').textContent=passed?'You scored '+score+' out of 20 ('+pct+'%). You have successfully completed the IRG Respectful Workplace & Harassment Prevention Training. Your results have been sent to your training coordinator.':'You scored '+score+' out of 20 ('+pct+'%). The passing score is 16/20 (80%). Please review the training materials and contact your training coordinator to schedule your retake.';
-  g('rRtk').innerHTML=!passed?'<div style="background:#FFF8E1;border:1px solid #F5C842;border-radius:9px;padding:14px 16px;font-size:13px;color:#7A5800;line-height:1.6;margin-bottom:16px"><strong style="display:block;font-size:14px;margin-bottom:3px">Retake required</strong>Score at least 16/20 to pass. Review all 6 modules and contact your HR team. Per company policy you must wait 10 days before retaking.</div>':'';
+  g('rRtk').innerHTML=!passed?'<div style="background:#FFF8E1;border:1px solid #F5C842;border-radius:9px;padding:14px 16px;font-size:13px;color:#7A5800;line-height:1.6;margin-bottom:16px"><strong style="display:block;font-size:14px;margin-bottom:3px">Retake required</strong>Score at least 16/20 to pass. Review all 6 modules and contact your HR team. Per company policy you must retake within 10 days.</div>':'';
   var bkH='',wrong=[];
   for(var j=0;j<EXAM.length;j++){
     var cor=ea[j]===EXAM[j].c;
